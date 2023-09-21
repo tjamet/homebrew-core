@@ -8,6 +8,7 @@ class GitReview < Formula
   license "Apache-2.0"
   revision 1
   head "https://opendev.org/opendev/git-review.git", branch: "master"
+  conflicts_with "maiao", because: "maiao provides an implementation of git-review for github"
 
   bottle do
     rebuild 1
